@@ -1,71 +1,56 @@
-<footer class="full-row bg-secondary p-0">
-            <div class="container">
-                <div  class="row">
-                    <div class="col-lg-12">
-                        <div class="divider py-40">
+<footer class="full-row" style="background-color: #000; color: #fff;"> <!-- Changed background to black -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="divider py-40">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="footer-widget mb-4">
+                                <p class="pb-20">REMS Portal (Real Estate Management System Portal) is an advanced, web-based platform designed to revolutionize the real estate transaction experience for all stakeholders, including buyers, sellers, agents, and builders.<br><br> This innovative system integrates various real estate processes into one unified platform, ensuring seamless interactions, efficient property management, and enhanced lead generation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
                             <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="footer-widget mb-4">
-                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/logo-white.png" alt="image"></a> </div>
-                                        <p class="pb-20 text-white">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis dignissim nam.</p>
-										<p class="pb-20 text-white">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque</p>
-                                        </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="footer-widget footer-nav mb-4">
+                                        <h4 class="widget-title double-down-line-left position-relative" style="color: #fff;">Sitemap</h4>
+                                        <ul class="hover-text-primary">
+                                            <li><a href="index.php" style="color: #fff;">Home</a></li>
+                                            <li><a href="property.php" style="color: #fff;">Properties</a></li>
+                                            <li><a href="calc.php" style="color: #fff;">Calculator</a></li>
+                                            <li><a href="contact.php" style="color: #fff;">Contact</a></li>
+                                            <li><a href="about.php" style="color: #fff;">About</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 col-lg-8">
-                                    <div class="row">
-                                        <div class="col-md-4 col-lg-4">
-                                            <div class="footer-widget footer-nav mb-4">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Support</h4>
-                                                <ul class="hover-text-primary">
-                                                    <li><a href="#" class="text-white">Forum</a></li>
-                                                    <li><a href="#" class="text-white">Statistics</a></li>
-                                                    <li><a href="#" class="text-white">Terms and Condition</a></li>
-                                                    <li><a href="#" class="text-white">Get Support</a></li>
-                                                    <li><a href="#" class="text-white">Freequenly Ask Question</a></li>
-                                                    <li><a href="#" class="text-white">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4">
-                                            <div class="footer-widget footer-nav mb-4">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Quick Links</h4>
-                                                <ul class="hover-text-primary">
-                                                    <li><a href="#" class="text-white">About Us</a></li>
-                                                    <li><a href="#" class="text-white">Featured Property</a></li>
-                                                    <li><a href="#" class="text-white">Become A Member</a></li>
-                                                    <li><a href="#" class="text-white">Submit Property</a></li>
-                                                    <li><a href="#" class="text-white">How It Work</a></li>
-                                                    <li><a href="#" class="text-white">Our Agents</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4">
-                                            <div class="footer-widget">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Contact Us</h4>
-                                                <ul class="text-white">
-                                                    <li class="hover-text-primary"><i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>Collins Street West, Victoria 8007, Australia</li>
-                                                    <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+1 246-345-0695</li>
-													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+1 246-345-0695</li>
-                                                    <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>helpline@homex.com</li>
-                                                </ul>
-                                            </div>
-                                            <div class="footer-widget media-widget mt-4 text-white hover-text-primary"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fas fa-rss"></i></a> </div>
-                                        </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="footer-widget footer-nav mb-4">
+                                        <h4 class="widget-title double-down-line-left position-relative" style="color: #fff;">Developer's Contact</h4>
+                                        <ul class="hover-text-primary">
+                                            <li><a href="https://www.sonikrish.com" style="color: #fff;" target="_blank">Krish Soni</a></li>
+                                            <li><a href="https://www.instagram.com/notkrish03/" style="color: #fff;" target="_blank">Instagram</a></li>
+                                            <li><a href="https://medium.com/@sonikrish2248" style="color: #fff;" target="_blank">Medium</a></li>
+                                            <li><a href="https://github.com/krish2248" style="color: #fff;" target="_blank">GitHub</a></li>
+                                            <li><a href="https://www.linkedin.com/in/krish-soni-460932228/" style="color: #fff;" target="_blank">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="footer-widget">
+                                        <h4 class="widget-title double-down-line-left position-relative" style="color: #fff;">Contact Us</h4>
+                                        <ul>
+                                            <li class="hover-text-primary"><i class="fas fa-map-marker-alt mr-2 font-13 mt-1"></i>bhagvati circle, kaliyabid, near nachiketa school, bhavnagar, 364001</li>
+                                            <li class="hover-text-primary"><i class="fas fa-phone-alt mr-2 font-13 mt-1"></i>+91 99796-65783</li>
+                                            <li class="hover-text-primary"><i class="fas fa-phone-alt mr-2 font-13 mt-1"></i>+0278 22470004</li>
+                                            <li class="hover-text-primary"><i class="fas fa-envelope mr-2 font-13 mt-1"></i>remsportal@gmail.com</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row copyright">
-                    <div class="col-sm-6"> <span class="text-white">© 2019 Homex All right reserved</span> </div>
-                    <div class="col-sm-6">
-                        <ul class="line-menu text-white hover-text-primary float-right">
-                            <li><a href="#">Privacy & Policy</a></li>
-                            <li>|</li>
-                            <li><a href="#"> Site Map</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</footer>

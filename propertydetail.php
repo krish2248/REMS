@@ -102,6 +102,9 @@ include("config.php");
                                     <!-- Slide 1-->
                                     <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['18'];?>" class="ls-bg" alt="" /> </div>
                                     
+                                    <!-- Slide 1-->
+                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['18'];?>" class="ls-bg" alt="" /> </div>
+                                    
                                     <!-- Slide 2-->
                                     <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['19'];?>" class="ls-bg" alt="" /> </div>
                                     
@@ -210,23 +213,23 @@ include("config.php");
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12">
-                                        <form class="bg-gray-form mt-5" action="#" method="post">
+                                        <form class="bg-gray-form mt-5" action="https://getform.io/f/awnqpokb" method="post">
                                             <div class="row">
                                                 <div class="col-md-5">
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <input class="form-control bg-gray" id="name" name="firstname" placeholder="Name" type="text">
+                                                                <input class="form-control bg-gray" id="name" name="name" placeholder="Name" type="text" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <input class="form-control bg-gray" id="email" name="email" placeholder="Email" type="text">
+                                                                <input class="form-control bg-gray" id="email" name="email" placeholder="Email" type="email" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <input class="form-control bg-gray" id="phone" name="phone" placeholder="Phone" type="text">
+                                                                <input class="form-control bg-gray" id="phone" name="phone" placeholder="Phone" type="text" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12">
@@ -238,7 +241,7 @@ include("config.php");
                                                     <div class="row">
                                                         <div class="col-md-12 col-lg-12">
                                                             <div class="form-group">
-                                                                <textarea class="form-control bg-gray mt-sm-20" id="massage" name="massage" cols="30" rows="7" placeholder="Massage"></textarea>
+                                                                <textarea class="form-control bg-gray mt-sm-20" id="message" name="message" cols="30" rows="7" placeholder="Message" required></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -255,61 +258,36 @@ include("config.php");
 					
                     <div class="col-lg-4">
                         <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-md-50">Send Message</h4>
-                        <form method="post" action="#">
+                        <form method="post" action="https://getform.io/f/avrwonpa">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Name">
+                                        <input type="text" class="form-control" name="name" placeholder="Enter Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Email">
+                                        <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Phone">
+                                        <input type="text" class="form-control" name="phone" placeholder="Enter Phone" required>
                                     </div>
                                 </div>
-								<div class="col-md-12">
+                                <div class="col-md-12">
                                     <div class="form-group">
-										<textarea class="form-control" placeholder="Enter Message"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Enter Message" rows="5" required></textarea>
                                     </div>
                                 </div>
-								
                                 <div class="col-md-12">
                                     <div class="form-group mt-4">
-                                        <button type="submit" class="btn btn-primary w-100">Search Property</button>
+                                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                        <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
-                        <form class="d-inline-block w-100" action="calc.php" method="post">
-                            <label class="sr-only">Property Amount</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">$</div>
-                                </div>
-                                <input type="text" class="form-control" name="amount" placeholder="Property Price">
-                            </div>
-                            <label class="sr-only">Month</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                </div>
-                                <input type="text" class="form-control" name="month" placeholder="Duration Year">
-                            </div>
-                            <label class="sr-only">Interest Rate</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">%</div>
-                                </div>
-                                <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
-                            </div>
-                            <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">Calclute Instalment</button>
-                        </form>
+                   
                         <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-5">Featured Property</h4>
 
                         <div class="sidebar-widget mt-5">

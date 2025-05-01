@@ -11,14 +11,7 @@ if(!isset($_SESSION['auser']))
   <div class="header">
 			
 				<!-- Logo -->
-                <div class="header-left">
-                    <a href="dashboard.php" class="logo">
-						<img src="assets/img/logo.png" alt="Logo">
-					</a>
-					<a href="dashboard.php" class="logo logo-small">
-						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
-					</a>
-                </div>
+              
 				<!-- /Logo -->
 				
 				<a href="javascript:void(0);" id="toggle_btn">

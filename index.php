@@ -16,7 +16,7 @@ include("config.php");
 
 <!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" href="images/favicon.ico">
+
 
 <!--	Fonts
 	========================================================-->
@@ -58,54 +58,7 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/04.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-lg-12">
-                        <div class="text-white">
-                            <h1 class="mb-4"><span class="text-primary">Find</span><br>
-                                Your dream house</h1>
-                            <form method="post" action="propertygrid.php">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-2">
-                                        <div class="form-group">
-                                            <select class="form-control" name="type">
-                                                <option value="">Select Type</option>
-												<option value="appartment">Appartment</option>
-												<option value="flat">Flat</option>
-												<option value="bunglow">Bunglow</option>
-												<option value="house">House</option>
-												<option value="villa">Villa</option>
-												<option value="office">Office</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-2">
-                                        <div class="form-group">
-                                            <select class="form-control" name="stype">
-                                                <option value="">Select Status</option>
-												<option value="rent">Rent</option>
-												<option value="sale">Sale</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="city" placeholder="Enter City or Enter State" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-2">
-                                        <div class="form-group">
-                                            <button type="submit" name="filter" class="btn btn-primary w-100">Search Property</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
         <!--	Banner End  -->
         
         <!--	Text Block One
@@ -261,7 +214,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">How It Work</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-5">How REMS Portal Works</h2>
                         </div>
                 </div>
                 <div class="row">
@@ -269,24 +222,24 @@ include("config.php");
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">1</div>
                             <div class="left-arrow"><i class="flaticon-investor flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Discussion</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <h5 class="text-secondary mt-5 mb-4">Search & Choose</h5>
+                            <p>search and select your desired property.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">2</div>
                             <div class="left-arrow"><i class="flaticon-search flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Files Review</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <h5 class="text-secondary mt-5 mb-4">send confirmation and get in touch with the team</h5>
+                            <p>Approach the agent/buyer, get in touch with them and connect with REMS team.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">3</div>
                             <div><i class="flaticon-handshake flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Acquire</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <h5 class="text-secondary mt-5 mb-4">Verify Docs and Payment transaction</h5>
+                            <p>Verify all the documents sent, once all paperwork is finished, complete transaction.</p>
                         </div>
                     </div>
                 </div>
@@ -368,69 +321,77 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Places</h2></div>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Services Provided :</h2>
+                    </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
+                        <!-- Gujarat -->
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/1.jpg" alt="">
-                                <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where state='gujarat'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
-                            </div>
+                            <a href="property.php?id=gujarat" class="text-decoration-none">
+                                <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9">
+                                    <img src="images/thumbnail4/1.jpg" alt="">
+                                    <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
+                                        <?php
+                                        $query = mysqli_query($con, "SELECT count(state) as total FROM property WHERE state='gujarat'");
+                                        $row = mysqli_fetch_array($query);
+                                        ?>
+                                        <h4 class="hover-text-primary text-capitalize">Gujarat</h4>
+                                        <span><?php echo $row['total']; ?> Properties Listed</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+
+                        <!-- Mumbai -->
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/2.jpg" alt="">
-                                <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where state='mumbai'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
-                            </div>
+                            <a href="property.php?id=mumbai" class="text-decoration-none">
+                                <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9">
+                                    <img src="images/thumbnail4/2.jpg" alt="">
+                                    <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
+                                        <?php
+                                        $query = mysqli_query($con, "SELECT count(state) as total FROM property WHERE state='mumbai'");
+                                        $row = mysqli_fetch_array($query);
+                                        ?>
+                                        <h4 class="hover-text-primary text-capitalize">Mumbai</h4>
+                                        <span><?php echo $row['total']; ?> Properties Listed</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+
+                        <!-- Bangalore -->
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/3.jpg" alt="">
-                                <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-                                    <?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where state='banglore'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
-                            </div>
+                            <a href="property.php?id=bangalore" class="text-decoration-none">
+                                <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9">
+                                    <img src="images/thumbnail4/3.jpg" alt="">
+                                    <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
+                                        <?php
+                                        $query = mysqli_query($con, "SELECT count(state) as total FROM property WHERE state='bangalore'");
+                                        $row = mysqli_fetch_array($query);
+                                        ?>
+                                        <h4 class="hover-text-primary text-capitalize">Bangalore</h4>
+                                        <span><?php echo $row['total']; ?> Properties Listed</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+
+                        <!-- Rajasthan -->
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/4.jpg" alt="">
-                                <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-                                    <?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where state='rajasthan'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-primary text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
-                            </div>
+                            <a href="property.php?id=rajasthan" class="text-decoration-none">
+                                <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9">
+                                    <img src="images/thumbnail4/4.jpg" alt="">
+                                    <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
+                                        <?php
+                                        $query = mysqli_query($con, "SELECT count(state) as total FROM property WHERE state='rajasthan'");
+                                        $row = mysqli_fetch_array($query);
+                                        ?>
+                                        <h4 class="hover-text-primary text-capitalize">Rajasthan</h4>
+                                        <span><?php echo $row['total']; ?> Properties Listed</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

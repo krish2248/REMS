@@ -4,8 +4,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <ul class="top-contact list-text-white  d-table">
-                                <li><a href="#"><i class="fas fa-phone-alt text-primary mr-1"></i>(012) 345 678 102</a></li>
-                                <li><a href="#"><i class="fas fa-envelope text-primary mr-1"></i>office@example.com</a></li>
+                                <li><a href="#"><i class="fas fa-phone-alt text-primary mr-1"></i>(+91) 9979688775</a></li>
+                                <li><a href="#"><i class="fas fa-envelope text-primary mr-1"></i>remsportal@gmail.com</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">
@@ -29,18 +29,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <nav class="navbar navbar-expand-lg navbar-light p-0"> <a class="navbar-brand position-relative" href="#"><img class="nav-logo" src="images/logo/logo.png" alt=""></a>
+                            <nav class="navbar navbar-expand-lg navbar-light p-0"> <a class="navbar-brand position-relative" href="#"><img class="nav-logo" src="../images/logo/logo-.png" alt=""></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item dropdown"> <a class="nav-link" href="index.php" role="button" aria-haspopup="true" aria-expanded="false">Home</a></li>
 										
+                                        <li class="nav-item"> <a class="nav-link" href="property.php">Properties</a> </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="calc.php">Calculator</a>
+                                        </li>
+
+                                        <li class="nav-item"> <a class="nav-link" href="contact.php">Contact</a> </li>
 										<li class="nav-item"> <a class="nav-link" href="about.php">About</a> </li>
 										
-										<li class="nav-item"> <a class="nav-link" href="agent.php">Agent</a> </li>
+									
 										
-										<li class="nav-item"> <a class="nav-link" href="property.php">Properties</a> </li>
-                                        <li class="nav-item"> <a class="nav-link" href="contact.php">Contact</a> </li>
+									
+                                       
+										
+										
 										
 										<?php  if(isset($_SESSION['uemail']))
 										{ ?>

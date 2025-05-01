@@ -78,7 +78,7 @@ if(!isset($_SESSION['auser']))
 									</div>
 									<div class="dash-widget-info">
 										
-										<h3>1234</h3>
+										<h3>9</h3>
 										
 										<h6 class="text-muted">Users</h6>
 										<div class="progress progress-sm">
@@ -99,9 +99,9 @@ if(!isset($_SESSION['auser']))
 									</div>
 									<div class="dash-widget-info">
 										
-										<h3>123</h3>
+										<h3>18</h3>
 										
-										<h6 class="text-muted">Request Blood</h6>
+										<h6 class="text-muted">Properties</h6>
 										<div class="progress progress-sm">
 											<div class="progress-bar bg-success w-50"></div>
 										</div>
@@ -120,9 +120,9 @@ if(!isset($_SESSION['auser']))
 									</div>
 									<div class="dash-widget-info">
 										
-										<h3>432</h3>
+										<h3>1</h3>
 										
-										<h6 class="text-muted">Donor</h6>
+										<h6 class="text-muted">admin</h6>
 										<div class="progress progress-sm">
 											<div class="progress-bar bg-danger w-50"></div>
 										</div>
@@ -141,7 +141,7 @@ if(!isset($_SESSION['auser']))
 									</div>
 									<div class="dash-widget-info">
 										
-										<h3>342</h3>
+										<h3>7</h3>
 										
 										<h6 class="text-muted">Contact Message</h6>
 										<div class="progress progress-sm">
@@ -156,29 +156,7 @@ if(!isset($_SESSION['auser']))
 					<div class="row">
 						<div class="col-md-12 col-lg-6">
 						
-							<!-- Sales Chart -->
-							<div class="card card-chart">
-								<div class="card-header">
-									<h4 class="card-title">Sales Overview</h4>
-								</div>
-								<div class="card-body">
-									<div id="morrisArea"></div>
-								</div>
-							</div>
-							<!-- /Sales Chart -->
-							
-						</div>
-						<div class="col-md-12 col-lg-6">
 						
-							<!-- Invoice Chart -->
-							<div class="card card-chart">
-								<div class="card-header">
-									<h4 class="card-title">Order Status</h4>
-								</div>
-								<div class="card-body">
-									<div id="morrisLine"></div>
-								</div>
-							</div>
 							<!-- /Invoice Chart -->
 							
 						</div>	

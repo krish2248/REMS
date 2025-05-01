@@ -117,7 +117,7 @@ if(isset($_POST['send']))
                                 <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Call Us</h5>
-                                        <span class="d-table text-secondary"> +91-8195837211</span>
+                                        <span class="d-table text-secondary"> +91-81958-37211</span>
 										<span class="text-secondary"> 0278-2480032</span>
 									</div>
                                 </li>
@@ -176,7 +176,7 @@ if(isset($_POST['send']))
         <!--	Contact Inforamtion -->
         
         <!--	Map -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29921.88989279091!2d72.89392697798161!3d20.373147326844283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0d1d69db97345%3A0x8bc4433aecadadfd!2sROFEL%20ARTS%20%26%20COMMERCE%20COLLEGE!5e0!3m2!1sen!2sin!4v1585740130321!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15530975.12513933!2d69.6200819339986!3d18.12970294079574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f574ba735c539%3A0x387d9b85bd2cd04e!2sGyanmanjari%20Innovative%20University!5e0!3m2!1sen!2sin!4v1745791599266!5m2!1sen!2sin" width="2000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<!--	Map -->
         
         <!--	Footer   start-->

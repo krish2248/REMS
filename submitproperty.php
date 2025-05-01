@@ -15,27 +15,26 @@ $msg="";
 if(isset($_POST['add']))
 {
 	
-	$title=$_POST['title'];
-	$content=$_POST['content'];
-	$ptype=$_POST['ptype'];
-	$bhk=$_POST['bhk'];
-	$bed=$_POST['bed'];
-	$balc=$_POST['balc'];
-	$hall=$_POST['hall'];
-	$stype=$_POST['stype'];
-	$bath=$_POST['bath'];
-	$kitc=$_POST['kitc'];
-	$floor=$_POST['floor'];
-	$price=$_POST['price'];
-	$city=$_POST['city'];
-	$asize=$_POST['asize'];
-	$loc=$_POST['loc'];
-	$state=$_POST['state'];
-	$status=$_POST['status'];
-	$uid=$_SESSION['uid'];
-	$feature=$_POST['feature'];
-	
-	$totalfloor=$_POST['totalfl'];
+	$title = mysqli_real_escape_string($con, $_POST['title']);
+    $content = mysqli_real_escape_string($con, $_POST['content']);
+    $ptype = mysqli_real_escape_string($con, $_POST['ptype']);
+    $bhk = mysqli_real_escape_string($con, $_POST['bhk']);
+    $bed = mysqli_real_escape_string($con, $_POST['bed']);
+    $balc = mysqli_real_escape_string($con, $_POST['balc']);
+    $hall = mysqli_real_escape_string($con, $_POST['hall']);
+    $stype = mysqli_real_escape_string($con, $_POST['stype']);
+    $bath = mysqli_real_escape_string($con, $_POST['bath']);
+    $kitc = mysqli_real_escape_string($con, $_POST['kitc']);
+    $floor = mysqli_real_escape_string($con, $_POST['floor']);
+    $price = mysqli_real_escape_string($con, $_POST['price']);
+    $city = mysqli_real_escape_string($con, $_POST['city']);
+    $asize = mysqli_real_escape_string($con, $_POST['asize']);
+    $loc = mysqli_real_escape_string($con, $_POST['loc']);
+    $state = mysqli_real_escape_string($con, $_POST['state']);
+    $status = mysqli_real_escape_string($con, $_POST['status']);
+    $uid = mysqli_real_escape_string($con, $_SESSION['uid']);
+    $feature = mysqli_real_escape_string($con, $_POST['feature']);
+    $totalfloor = mysqli_real_escape_string($con, $_POST['totalfl']);
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
@@ -78,7 +77,7 @@ if(isset($_POST['add']))
 		}
 		else
 		{
-			$error="<p class='alert alert-warning'>Property Not Inserted Some Error</p>";
+			$error="<p class='alert alert-warning'>Property Not Inserted. Error: " . mysqli_error($con) . "</p>";
 		}
 }							
 ?>

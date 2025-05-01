@@ -40,19 +40,10 @@ include("config.php");
 </head>
 <body>
 
-<!--	Page Loader -->
-<!-- <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
-	</div>
-</div> -->
-
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
-		<?php include("include/header.php");?>
+        <?php include("include/header.php");?>
         <!--	Header end  -->
         
         <!--	Banner   --->
@@ -74,43 +65,46 @@ include("config.php");
             </div>
         </div>
          <!--	Banner   --->
-		 
+         
         <!--	About Our Company -->
         <div class="full-row">
             <div class="container">
-                
-				
-				<?php 
-					
-					$query=mysqli_query($con,"SELECT * FROM about");
-					while($row=mysqli_fetch_array($query))
-					{
-				?>
-				<div class="row">
+                <div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4"><?php echo $row['1'];?></h3>
+                        <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4">About IT HUB Software Solutions</h3>
                     </div>
                 </div>
                 <div class="row about-company">
-                    <div class="col-md-12 col-lg-7">
+                    <div class="col-md-12 col-lg-12">
                         <div class="about-content">
-                            <?php echo $row['2'];?>
+                            <p>
+                                IT HUB Software Solutions is an innovative and dynamic web development company located in Ahmedabad, Gujarat, India. We are dedicated to providing state-of-the-art web-based solutions to businesses of all sizes. Specializing in web development, IT consulting, and digital transformation services, we offer a comprehensive suite of services that help businesses harness the power of technology to optimize operations and improve customer experiences.
+                            </p>
+                            <p>
+                                Our expertise spans a wide range of services, including:
+                            </p>
+                            <ul>
+                                <li>Customized Web Development: Tailor-made solutions that align with your business goals, ensuring your website or application is perfectly suited to your needs.</li>
+                                <li>PHP Web Development: We deliver robust and scalable PHP-based solutions for websites, eCommerce platforms, and enterprise applications.</li>
+                                <li>ASP.NET Programming: Powerful, secure, and high-performance applications built using ASP.NET frameworks.</li>
+                                <li>eCommerce Solutions: End-to-end eCommerce solutions that include website development, payment gateway integration, product management, and more.</li>
+                                <li>Multimedia & Print Publication Solutions: Creative design services for brochures, flyers, and other marketing materials, alongside multimedia content for dynamic websites.</li>
+                                <li>CSS/XHTML Web Design: Beautiful, responsive, and user-friendly web design services that ensure an exceptional user experience across devices.</li>
+                                <li>Content Management & SEO (Web Promotion): Efficient content management systems and strategies to boost your site’s visibility on search engines.</li>
+                            </ul>
+                            <p>
+                                At IT HUB Software Solutions, we are not just a service provider; we are your trusted digital partner. Our mission is to empower businesses to grow by providing innovative, cost-effective, and reliable digital solutions. With our team of expert developers, designers, and consultants, we are dedicated to crafting solutions that drive results and create long-lasting impact.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-5 mt-5">
-                        <div class="about-img"> <img src="admin/upload/<?php echo $row['3'];?>" alt="about image"> </div>
-                    </div>
                 </div>
-				
-				<?php } ?>
-				
             </div>
         </div>
         <!--	About Our Company -->        
         
        <!--	Footer   start-->
-		<?php include("include/footer.php");?>
-		<!--	Footer   start-->
+        <?php include("include/footer.php");?>
+        <!--	Footer   start-->
         
         <!-- Scroll to top --> 
         <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a> 
@@ -122,20 +116,7 @@ include("config.php");
 <!--	Js Link
 ============================================================--> 
 <script src="js/jquery.min.js"></script> 
-<!--jQuery Layer Slider --> 
-<script src="js/greensock.js"></script> 
-<script src="js/layerslider.transitions.js"></script> 
-<script src="js/layerslider.kreaturamedia.jquery.js"></script> 
-<!--jQuery Layer Slider --> 
-<script src="js/popper.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
-<script src="js/owl.carousel.min.js"></script> 
-<script src="js/tmpl.js"></script> 
-<script src="js/jquery.dependClass-0.1.js"></script> 
-<script src="js/draggable-0.1.js"></script> 
-<script src="js/jquery.slider.js"></script> 
-<script src="js/wow.js"></script> 
-<script src="js/jquery.cookie.js"></script> 
 <script src="js/custom.js"></script>
 </body>
 
